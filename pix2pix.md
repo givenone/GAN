@@ -70,6 +70,7 @@ class GeneratorUNet(nn.Module):
 ## Discriminator
 
 - High Frequency Detail을 살리기 위한 `patchGAN`
+
 It is well known that the L2 loss and L1 produces blurry results on image generation problems.  Although these losses fail to encourage high-
 frequency crispness, in many cases they nonetheless accurately capture the low frequencies. For problems where this is the case, we do not need an entirely new framework to enforce correctness at the low frequencies. L1 will already do.
 
